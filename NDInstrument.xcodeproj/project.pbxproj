@@ -8,24 +8,54 @@
 
 /* Begin PBXBuildFile section */
 		4CB610A91FBC768F00E69C6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610A81FBC768F00E69C6E /* AppDelegate.m */; };
-		4CB610AC1FBC768F00E69C6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610AB1FBC768F00E69C6E /* ViewController.m */; };
+		4CB610AC1FBC768F00E69C6E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610AB1FBC768F00E69C6E /* HomeViewController.m */; };
 		4CB610AF1FBC768F00E69C6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB610AD1FBC768F00E69C6E /* Main.storyboard */; };
 		4CB610B11FBC768F00E69C6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB610B01FBC768F00E69C6E /* Assets.xcassets */; };
 		4CB610B41FBC768F00E69C6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB610B21FBC768F00E69C6E /* LaunchScreen.storyboard */; };
 		4CB610B71FBC768F00E69C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610B61FBC768F00E69C6E /* main.m */; };
+		4CB610D51FBC7AEA00E69C6E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610D41FBC7AEA00E69C6E /* BaseViewController.m */; };
+		4CB610DB1FBC8A9100E69C6E /* KegelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610D91FBC8A9100E69C6E /* KegelViewController.m */; };
+		4CB610DC1FBC8A9100E69C6E /* KegelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB610DA1FBC8A9100E69C6E /* KegelViewController.xib */; };
+		4CB610E41FBC8BC000E69C6E /* CustomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610DF1FBC8BC000E69C6E /* CustomBar.m */; };
+		4CB610E51FBC8BC000E69C6E /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610E11FBC8BC000E69C6E /* CustomTabBar.m */; };
+		4CB610E61FBC8BC000E69C6E /* JHTickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610E31FBC8BC000E69C6E /* JHTickerView.m */; };
+		4CB610EA1FBC8CC400E69C6E /* SDiPhoneVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610E91FBC8CC300E69C6E /* SDiPhoneVersion.m */; };
+		4CB610EE1FBC8D5900E69C6E /* ConstManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610EC1FBC8D5800E69C6E /* ConstManager.m */; };
+		4CB610F11FBC8E4B00E69C6E /* NSString+PKBSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610EF1FBC8E4B00E69C6E /* NSString+PKBSize.m */; };
+		4CB610F41FBC903C00E69C6E /* NDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610F21FBC903C00E69C6E /* NDNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CB610A41FBC768F00E69C6E /* NDInstrument.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDInstrument.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB610A71FBC768F00E69C6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CB610A81FBC768F00E69C6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4CB610AA1FBC768F00E69C6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4CB610AB1FBC768F00E69C6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4CB610AA1FBC768F00E69C6E /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		4CB610AB1FBC768F00E69C6E /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		4CB610AE1FBC768F00E69C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CB610B01FBC768F00E69C6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CB610B31FBC768F00E69C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CB610B51FBC768F00E69C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CB610B61FBC768F00E69C6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CB610D31FBC7AEA00E69C6E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		4CB610D41FBC7AEA00E69C6E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		4CB610D71FBC892E00E69C6E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4CB610D81FBC8A9100E69C6E /* KegelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KegelViewController.h; sourceTree = "<group>"; };
+		4CB610D91FBC8A9100E69C6E /* KegelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KegelViewController.m; sourceTree = "<group>"; };
+		4CB610DA1FBC8A9100E69C6E /* KegelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KegelViewController.xib; sourceTree = "<group>"; };
+		4CB610DE1FBC8BC000E69C6E /* CustomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBar.h; sourceTree = "<group>"; };
+		4CB610DF1FBC8BC000E69C6E /* CustomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBar.m; sourceTree = "<group>"; };
+		4CB610E01FBC8BC000E69C6E /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
+		4CB610E11FBC8BC000E69C6E /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
+		4CB610E21FBC8BC000E69C6E /* JHTickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTickerView.h; sourceTree = "<group>"; };
+		4CB610E31FBC8BC000E69C6E /* JHTickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTickerView.m; sourceTree = "<group>"; };
+		4CB610E81FBC8CC300E69C6E /* SDiPhoneVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDiPhoneVersion.h; sourceTree = "<group>"; };
+		4CB610E91FBC8CC300E69C6E /* SDiPhoneVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDiPhoneVersion.m; sourceTree = "<group>"; };
+		4CB610EC1FBC8D5800E69C6E /* ConstManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstManager.m; sourceTree = "<group>"; };
+		4CB610ED1FBC8D5900E69C6E /* ConstManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstManager.h; sourceTree = "<group>"; };
+		4CB610EF1FBC8E4B00E69C6E /* NSString+PKBSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PKBSize.m"; sourceTree = "<group>"; };
+		4CB610F01FBC8E4B00E69C6E /* NSString+PKBSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PKBSize.h"; sourceTree = "<group>"; };
+		4CB610F21FBC903C00E69C6E /* NDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDNavigationController.m; sourceTree = "<group>"; };
+		4CB610F31FBC903C00E69C6E /* NDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDNavigationController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +90,235 @@
 			children = (
 				4CB610A71FBC768F00E69C6E /* AppDelegate.h */,
 				4CB610A81FBC768F00E69C6E /* AppDelegate.m */,
-				4CB610AA1FBC768F00E69C6E /* ViewController.h */,
-				4CB610AB1FBC768F00E69C6E /* ViewController.m */,
+				4CB610BD1FBC7A3100E69C6E /* Common */,
+				4CB610C11FBC7A3D00E69C6E /* ThirdSDK */,
+				4CB610C21FBC7A4C00E69C6E /* Classes */,
 				4CB610AD1FBC768F00E69C6E /* Main.storyboard */,
 				4CB610B01FBC768F00E69C6E /* Assets.xcassets */,
 				4CB610B21FBC768F00E69C6E /* LaunchScreen.storyboard */,
 				4CB610B51FBC768F00E69C6E /* Info.plist */,
 				4CB610B61FBC768F00E69C6E /* main.m */,
+				4CB610D71FBC892E00E69C6E /* PrefixHeader.pch */,
 			);
 			path = NDInstrument;
+			sourceTree = "<group>";
+		};
+		4CB610BD1FBC7A3100E69C6E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4CB610EB1FBC8D4100E69C6E /* Const */,
+				4CB610E71FBC8CC300E69C6E /* iPhoneDevice */,
+				4CB610DD1FBC8BC000E69C6E /* CustomBar */,
+				4CB610BE1FBC7A3100E69C6E /* Category */,
+				4CB610BF1FBC7A3100E69C6E /* SingleClass */,
+				4CB610C01FBC7A3100E69C6E /* SuperClass */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4CB610BE1FBC7A3100E69C6E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4CB610F01FBC8E4B00E69C6E /* NSString+PKBSize.h */,
+				4CB610EF1FBC8E4B00E69C6E /* NSString+PKBSize.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4CB610BF1FBC7A3100E69C6E /* SingleClass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SingleClass;
+			sourceTree = "<group>";
+		};
+		4CB610C01FBC7A3100E69C6E /* SuperClass */ = {
+			isa = PBXGroup;
+			children = (
+				4CB610D31FBC7AEA00E69C6E /* BaseViewController.h */,
+				4CB610D41FBC7AEA00E69C6E /* BaseViewController.m */,
+				4CB610F31FBC903C00E69C6E /* NDNavigationController.h */,
+				4CB610F21FBC903C00E69C6E /* NDNavigationController.m */,
+			);
+			path = SuperClass;
+			sourceTree = "<group>";
+		};
+		4CB610C11FBC7A3D00E69C6E /* ThirdSDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdSDK;
+			sourceTree = "<group>";
+		};
+		4CB610C21FBC7A4C00E69C6E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4CB610AA1FBC768F00E69C6E /* HomeViewController.h */,
+				4CB610AB1FBC768F00E69C6E /* HomeViewController.m */,
+				4CB610C31FBC7A4C00E69C6E /* Bluetooth */,
+				4CB610C71FBC7A4C00E69C6E /* JinZhi */,
+				4CB610CB1FBC7A4C00E69C6E /* Kegel */,
+				4CB610CF1FBC7A4C00E69C6E /* NeiDiao */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4CB610C31FBC7A4C00E69C6E /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				4CB610C41FBC7A4C00E69C6E /* controller */,
+				4CB610C51FBC7A4C00E69C6E /* model */,
+				4CB610C61FBC7A4C00E69C6E /* view */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		4CB610C41FBC7A4C00E69C6E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		4CB610C51FBC7A4C00E69C6E /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4CB610C61FBC7A4C00E69C6E /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4CB610C71FBC7A4C00E69C6E /* JinZhi */ = {
+			isa = PBXGroup;
+			children = (
+				4CB610C81FBC7A4C00E69C6E /* controller */,
+				4CB610C91FBC7A4C00E69C6E /* model */,
+				4CB610CA1FBC7A4C00E69C6E /* view */,
+			);
+			path = JinZhi;
+			sourceTree = "<group>";
+		};
+		4CB610C81FBC7A4C00E69C6E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		4CB610C91FBC7A4C00E69C6E /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4CB610CA1FBC7A4C00E69C6E /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4CB610CB1FBC7A4C00E69C6E /* Kegel */ = {
+			isa = PBXGroup;
+			children = (
+				4CB610CC1FBC7A4C00E69C6E /* controller */,
+				4CB610CD1FBC7A4C00E69C6E /* model */,
+				4CB610CE1FBC7A4C00E69C6E /* view */,
+				4CB610D81FBC8A9100E69C6E /* KegelViewController.h */,
+				4CB610D91FBC8A9100E69C6E /* KegelViewController.m */,
+				4CB610DA1FBC8A9100E69C6E /* KegelViewController.xib */,
+			);
+			path = Kegel;
+			sourceTree = "<group>";
+		};
+		4CB610CC1FBC7A4C00E69C6E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		4CB610CD1FBC7A4C00E69C6E /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4CB610CE1FBC7A4C00E69C6E /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4CB610CF1FBC7A4C00E69C6E /* NeiDiao */ = {
+			isa = PBXGroup;
+			children = (
+				4CB610D01FBC7A4C00E69C6E /* controller */,
+				4CB610D11FBC7A4C00E69C6E /* model */,
+				4CB610D21FBC7A4C00E69C6E /* view */,
+			);
+			path = NeiDiao;
+			sourceTree = "<group>";
+		};
+		4CB610D01FBC7A4C00E69C6E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		4CB610D11FBC7A4C00E69C6E /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4CB610D21FBC7A4C00E69C6E /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4CB610DD1FBC8BC000E69C6E /* CustomBar */ = {
+			isa = PBXGroup;
+			children = (
+				4CB610DE1FBC8BC000E69C6E /* CustomBar.h */,
+				4CB610DF1FBC8BC000E69C6E /* CustomBar.m */,
+				4CB610E01FBC8BC000E69C6E /* CustomTabBar.h */,
+				4CB610E11FBC8BC000E69C6E /* CustomTabBar.m */,
+				4CB610E21FBC8BC000E69C6E /* JHTickerView.h */,
+				4CB610E31FBC8BC000E69C6E /* JHTickerView.m */,
+			);
+			path = CustomBar;
+			sourceTree = "<group>";
+		};
+		4CB610E71FBC8CC300E69C6E /* iPhoneDevice */ = {
+			isa = PBXGroup;
+			children = (
+				4CB610E81FBC8CC300E69C6E /* SDiPhoneVersion.h */,
+				4CB610E91FBC8CC300E69C6E /* SDiPhoneVersion.m */,
+			);
+			path = iPhoneDevice;
+			sourceTree = "<group>";
+		};
+		4CB610EB1FBC8D4100E69C6E /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				4CB610ED1FBC8D5900E69C6E /* ConstManager.h */,
+				4CB610EC1FBC8D5800E69C6E /* ConstManager.m */,
+			);
+			path = Const;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +382,7 @@
 				4CB610B41FBC768F00E69C6E /* LaunchScreen.storyboard in Resources */,
 				4CB610B11FBC768F00E69C6E /* Assets.xcassets in Resources */,
 				4CB610AF1FBC768F00E69C6E /* Main.storyboard in Resources */,
+				4CB610DC1FBC8A9100E69C6E /* KegelViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,9 +393,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CB610AC1FBC768F00E69C6E /* ViewController.m in Sources */,
+				4CB610E61FBC8BC000E69C6E /* JHTickerView.m in Sources */,
+				4CB610AC1FBC768F00E69C6E /* HomeViewController.m in Sources */,
+				4CB610D51FBC7AEA00E69C6E /* BaseViewController.m in Sources */,
 				4CB610B71FBC768F00E69C6E /* main.m in Sources */,
+				4CB610DB1FBC8A9100E69C6E /* KegelViewController.m in Sources */,
+				4CB610F41FBC903C00E69C6E /* NDNavigationController.m in Sources */,
+				4CB610F11FBC8E4B00E69C6E /* NSString+PKBSize.m in Sources */,
+				4CB610E41FBC8BC000E69C6E /* CustomBar.m in Sources */,
+				4CB610E51FBC8BC000E69C6E /* CustomTabBar.m in Sources */,
 				4CB610A91FBC768F00E69C6E /* AppDelegate.m in Sources */,
+				4CB610EA1FBC8CC400E69C6E /* SDiPhoneVersion.m in Sources */,
+				4CB610EE1FBC8D5900E69C6E /* ConstManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +539,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NDInstrument/PrefixHeader.pch;
 				INFOPLIST_FILE = NDInstrument/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ndy..NDInstrument;
@@ -292,6 +554,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NDInstrument/PrefixHeader.pch;
 				INFOPLIST_FILE = NDInstrument/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ndy..NDInstrument;

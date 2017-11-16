@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "HomeViewController.h"
+#import "NDNavigationController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NDNavigationController *nav = [[NDNavigationController alloc]initWithRootViewController:[HomeViewController new]];
+    self.window.rootViewController = nav;
+    
     return YES;
 }
 
