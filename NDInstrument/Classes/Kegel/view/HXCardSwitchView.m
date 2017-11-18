@@ -13,7 +13,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        _cardSwitchScrollView = [[UIScrollView alloc] initWithFrame:frame];
+        _cardSwitchScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         _cardSwitchScrollView.backgroundColor = [UIColor clearColor];
         _cardSwitchScrollView.showsHorizontalScrollIndicator = NO;
         _cardSwitchScrollView.delegate = self;
