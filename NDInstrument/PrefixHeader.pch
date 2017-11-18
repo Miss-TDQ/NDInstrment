@@ -14,7 +14,6 @@
 
 #import "BaseViewController.h"
 #import "SDiPhoneVersion.h"
-#import "ConstManager.h"
 #import "NSString+PKBSize.h"
 
 
@@ -28,8 +27,18 @@
 #define SCREENWIDTH     [[UIScreen mainScreen] bounds].size.width
 
 /**屏幕适配*/
-#define FitSizeValue(value) \
-((value)/320.0f*[UIScreen mainScreen].bounds.size.width)
+#define FitSizeValueWidth(value) \
+((value)/375.0f*[UIScreen mainScreen].bounds.size.width)
+#define FitSizeValueHeight(value) \
+((value)/667.0f*[UIScreen mainScreen].bounds.size.height)
+
+#define NavTitleColor [UIColor colorWithRed:201/255.0 green:160/255.0 blue:94/255.0 alpha:1.0]
+
+
+
+
+
+
 #endif 
 
 //代码添加后 真机不再输出Nslog 以节省时间和内存占有量（nslog 开关）

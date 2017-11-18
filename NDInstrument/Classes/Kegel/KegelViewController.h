@@ -10,6 +10,5 @@
 
 @interface KegelViewController : BaseViewController
 
--(void)test;
 
 @end

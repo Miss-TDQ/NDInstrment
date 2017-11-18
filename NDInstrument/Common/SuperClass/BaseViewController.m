@@ -17,19 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self showCutomBar];
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.bgImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
+    self.bgImageView.image = [UIImage imageNamed:@"bj"];//背景图默认图片
+    [self.view insertSubview:self.bgImageView atIndex:0];
+    
+    [self showCutomBar];
     
     if ([self.titleStr length] > 0 )
     {
         self.cusBar.titleStr = self.titleStr;
     }
-
-    self.bgImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
-    self.bgImageView.image = [UIImage imageNamed:@""];//背景图默认图片
-    
-    [self.view addSubview:self.bgImageView];
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -50,7 +48,7 @@
     
     [self.view addSubview:self.cusBar];
     [self.cusBar lt_setBackgroundColor:[UIColor clearColor]];
-    self.cusBar.tickerView.tickerLabel.textColor = [UIColor colorWithRed:202/255.0 green:163/255.0 blue:127/255.0 alpha:1.0];
+    self.cusBar.tickerView.tickerLabel.textColor = NavTitleColor;
     self.cusBar.customdelegate = self;
     [self.cusBar setLeftBtnImgWith:[UIImage imageNamed:@"back_arrow"] RightBtnImgWith:nil];
     
