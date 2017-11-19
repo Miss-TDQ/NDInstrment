@@ -2,36 +2,48 @@
 //  NeiDiaoClassViewController.m
 //  NDInstrument
 //
-//  Created by miss on 2017/11/18.
+//  Created by 吴淼 on 2017/11/18.
 //  Copyright © 2017年 miss. All rights reserved.
 //
 
 #import "NeiDiaoClassViewController.h"
 
 @interface NeiDiaoClassViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *StrengthLabel;
+@property (weak, nonatomic) IBOutlet UIButton *stopButton;
 
 @end
 
 @implementation NeiDiaoClassViewController
-
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [[BLEManager getInstance].ble writeValueToDevice:[NDInstrment SelectionModel:1]];
+    
+     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(getPressure:) name:@"SelectionModel" object:nil];
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+//    self remov
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+}
+- (void)getPressure:(NSNotification *)noti{
+
+    NSLog(@"value ;;;%@",noti.object);
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)add:(id)sender {
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)reduce:(id)sender {
 }
-*/
+
+- (IBAction)stop:(id)sender {
+}
 
 @end

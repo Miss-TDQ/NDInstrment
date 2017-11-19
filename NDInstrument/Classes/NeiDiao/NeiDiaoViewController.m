@@ -7,7 +7,7 @@
 //
 
 #import "NeiDiaoViewController.h"
-
+#import "NeiDiaoClassViewController.h"
 @interface NeiDiaoViewController ()
 
 @end
@@ -20,9 +20,11 @@
      self.cusBar.titleStr = @"私密紧致内雕";
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)onClick:(id)sender {
+    NeiDiaoClassViewController *vc = [NeiDiaoClassViewController new];
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
+
 
 @end

@@ -10,4 +10,6 @@
 
 @interface EvaluteResultViewController : BaseViewController
 
+-(instancetype)initWithX:(CGFloat)x Y:(CGFloat)y Z:(CGFloat)z J:(CGFloat)j;
+
 @end

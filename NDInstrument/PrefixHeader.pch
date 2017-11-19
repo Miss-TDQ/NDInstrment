@@ -15,7 +15,11 @@
 #import "BaseViewController.h"
 #import "SDiPhoneVersion.h"
 #import "NSString+PKBSize.h"
-
+#import "NSString+Toast.h"
+#import "BLEManager.h"
+#import "NDInstrment.h"
+#import "UIView+UIViewAddition.h"
+#import "UIColor+Hex.h"
 
 /**判断ios版本*/
 #define IOS7            (__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_7_0)
@@ -34,10 +38,8 @@
 
 #define NavTitleColor [UIColor colorWithRed:201/255.0 green:160/255.0 blue:94/255.0 alpha:1.0]
 
-
-
-
-
+/**设置图片*/
+#define IMG(name)           [UIImage imageNamed:name]
 
 #endif 
 

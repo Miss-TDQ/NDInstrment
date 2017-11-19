@@ -12,6 +12,9 @@
 
 @protocol BleHelperDelegate <NSObject>
 @optional
+
+- (void)findNewDevice:(CBPeripheral *)per;                  //发现新的设备
+
 - (void)scannFinish:(NSMutableDictionary *)bleDic;          //搜索结束
 
 - (void)connectSuccess:(CBPeripheral *)per;                 //连接设备成功

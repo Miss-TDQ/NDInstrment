@@ -29,12 +29,20 @@
     
     if (self) {
         
+        self.ble = [[BLeHelper alloc] initBabyBle];
+        
         self.ble.delegate = self;
         
     }
     return self;
 }
 #pragma mark ------------BleHelperDelegate
+//发现新的设备
+- (void)findNewDevice:(CBPeripheral *)per {
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"findNewDevice" object:per];
+    
+}
 //扫描结束
 - (void)scannFinish:(NSMutableDictionary *)bleDic {
     

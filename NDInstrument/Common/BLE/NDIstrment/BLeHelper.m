@@ -68,7 +68,7 @@
     if (self != nil) {
         babyBle = [BabyBluetooth shareBabyBluetooth];
         self.CBble = babyBle.centralManager;
-        scannTime  = 3;
+        scannTime  = 300;
         connectTime = 10;
         scanState = NO;
         self.stateFlat = NO;
@@ -333,9 +333,9 @@
                                                                 forKey:peripheral];
                 [weakSelf.deviceDic addEntriesFromDictionary:dic];
             }
-            /*if ([weakSelf.delegate respondsToSelector:@selector(findNewDevice:)]){
-                [weakSelf.delegate findNewDevice:weakSelf.deviceDic];
-            }*/
+            if ([weakSelf.delegate respondsToSelector:@selector(findNewDevice:)]){
+                [weakSelf.delegate findNewDevice:peripheral];
+            }
         }
     }];
     
@@ -429,21 +429,6 @@
         
         
         for (CBService *service in peripheral.services){
-            /*
-            NSLog(@"服务=====%@",service.UUID);
-            
-            if (![[weakSelf getDeviceServices] containsObject:service.UUID]) {
-                
-                NSLog(@"不是指定服务：%@",service.UUID);
-                
-                if ([weakSelf.delegate respondsToSelector:@selector(connectFailed)]){
-                    [weakSelf.delegate connectFailed];
-                }
-                
-                return ;
-                
-            }
-         */
             
             NSLog(@"发现外设的服务号为 ------> %@",service.UUID);
             if ([service.UUID isEqual:[CBUUID UUIDWithString:weakSelf.serviceUUID]]){
@@ -499,8 +484,8 @@
         if (characteristic.isNotifying) {
             
             weakSelf.conncetChaCount++;
-            
-            if (weakSelf.conncetChaCount == self.connectPer.services.count  - 1) {
+                        
+            if (weakSelf.conncetChaCount == self.connectPer.services.count  - 2) {
                 
                 weakSelf.conncetChaCount = 0;
                 
