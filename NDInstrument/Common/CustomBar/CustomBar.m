@@ -43,7 +43,7 @@ static char emptyImageKey;
         [self addSubview:_tickerView];
         
         self.leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _leftBtn.frame = CGRectMake(0, cusBarBtnY, cusBarBtnWidth, cusBarBtnHeight);
+        _leftBtn.frame = CGRectMake(15, cusBarBtnY + (frame.size.height - cusBarBtnY)/2-20/2, 10.5, 20);
         _leftBtn.adjustsImageWhenHighlighted = NO;
         [_leftBtn addTarget:self action:@selector(leftleftBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_leftBtn];

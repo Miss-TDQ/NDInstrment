@@ -145,44 +145,44 @@
                             <rect key="frame" x="25.5" y="216.5" width="269" height="153.5"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tuijiankecheng_07" translatesAutoresizingMaskIntoConstraints="NO" id="mPg-ES-YZJ">
-                                    <rect key="frame" x="96" y="1" width="77" height="27"/>
+                                    <rect key="frame" x="96" y="0.0" width="77" height="27"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="77" id="7a0-Lz-qDJ"/>
                                         <constraint firstAttribute="height" constant="27" id="Iou-Fu-t9i"/>
                                     </constraints>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xunlian_11" translatesAutoresizingMaskIntoConstraints="NO" id="IBX-mb-wkC">
-                                    <rect key="frame" x="8" y="32.5" width="58" height="44"/>
+                                    <rect key="frame" x="8" y="31.5" width="58" height="44"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="58" id="6Iw-N7-IY5"/>
                                         <constraint firstAttribute="height" constant="44" id="N8v-32-GeF"/>
                                     </constraints>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neidiao_11" translatesAutoresizingMaskIntoConstraints="NO" id="ihZ-2e-PZx">
-                                    <rect key="frame" x="8" y="106.5" width="58" height="44"/>
+                                    <rect key="frame" x="8" y="105.5" width="58" height="44"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="58" id="Fva-gN-7oD"/>
                                         <constraint firstAttribute="height" constant="44" id="T0q-Yk-ULa"/>
                                     </constraints>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cRI-aM-tit">
-                                    <rect key="frame" x="71" y="113.5" width="59" height="31.5"/>
+                                    <rect key="frame" x="71" y="112.5" width="59" height="31.5"/>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dbX-gu-Ujd">
-                                    <rect key="frame" x="208.5" y="113.5" width="58.5" height="31.5"/>
+                                    <rect key="frame" x="208.5" y="112.5" width="58.5" height="31.5"/>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9pd-Mg-JVE">
-                                    <rect key="frame" x="140" y="113.5" width="58.5" height="31.5"/>
+                                    <rect key="frame" x="140" y="112.5" width="58.5" height="31.5"/>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XID-eK-rNF">
-                                    <rect key="frame" x="71" y="43" width="100" height="23.5"/>
+                                    <rect key="frame" x="71" y="42" width="100" height="23.5"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="XID-eK-rNF" secondAttribute="height" multiplier="158:37" id="gJa-m4-ayy"/>
                                         <constraint firstAttribute="width" constant="100" id="tfQ-ri-FC7"/>
                                     </constraints>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gRD-xM-p5F">
-                                    <rect key="frame" x="176" y="43" width="100.5" height="23.5"/>
+                                    <rect key="frame" x="176" y="42" width="100.5" height="23.5"/>
                                 </imageView>
                             </subviews>
                             <constraints>
@@ -211,15 +211,14 @@
                                 <constraint firstItem="gRD-xM-p5F" firstAttribute="leading" secondItem="XID-eK-rNF" secondAttribute="trailing" constant="5" id="zuq-Hy-zY1"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZh-tT-ry5">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZh-tT-ry5">
                             <rect key="frame" x="99.5" y="397" width="121" height="34"/>
-                            <color key="backgroundColor" red="0.7923818826675415" green="0.62641644477844238" blue="0.33947652578353882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="121" id="8Na-IZ-7rM"/>
                                 <constraint firstAttribute="height" constant="34" id="udo-Jf-4cF"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <state key="normal" title="再测一次"/>
+                            <state key="normal" backgroundImage="zaiceyici_03"/>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pG9-vC-5bx">
                             <rect key="frame" x="231" y="52" width="60" height="12"/>
@@ -287,5 +286,6 @@
         <image name="neidiao_11" width="127" height="87"/>
         <image name="tuijiankecheng_07" width="153" height="54"/>
         <image name="xunlian_11" width="115" height="87"/>
+        <image name="zaiceyici_03" width="243" height="70"/>
     </resources>
 </document>

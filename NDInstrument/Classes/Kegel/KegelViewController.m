@@ -7,73 +7,93 @@
 //
 
 #import "KegelViewController.h"
-#import "HXCardSwitchView.h"
+#import "WLScrollView.h"
 #import "KegelClassViewController.h"
-@interface KegelViewController ()<HXCardSwitchViewDelegate>
-
-@property (nonatomic,strong) HXCardSwitchView *cardSwitchView;
-@property (nonatomic,strong) UIPageControl *pageControl;
-
+@interface KegelViewController ()<WLScrollViewDelegate>
+@property (nonatomic, strong) WLScrollView *wlScrView;
+@property (nonatomic, strong) NSMutableArray *imageArray;
 @end
 
 @implementation KegelViewController
-
+{
+    CGFloat ratio;     //按6比例适配
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+//    [MyUserManager shareInstance].isCanDragBack=NO;
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+//    [MyUserManager shareInstance].isCanDragBack = YES;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.cusBar.titleStr = @"凯格尔训练";
     
-    [self addFelicityView];
-}
-
-- (void)addFelicityView {
-    _cardSwitchView = [[HXCardSwitchView alloc] initWithFrame:CGRectMake(0, (SCREENHEIGHT - 377)/2 - 50, self.view.frame.size.width, 377)];
-    [_cardSwitchView setCardSwitchViewAry:[self ittemsCardViewAry] delegate:self];
-    [self.view addSubview:_cardSwitchView];
-    
-    self.pageControl = [[UIPageControl alloc] init];
-    self.pageControl.frame = CGRectMake(SCREENWIDTH/2 - 20/2, CGRectGetMaxY(_cardSwitchView.frame)+16, 50, 5);
-    self.pageControl.numberOfPages = 4;
-    _pageControl.currentPage = 0;
-    _pageControl.pageIndicatorTintColor = [UIColor colorWithRed:201/255.0 green:201/255.0 blue:201/255.0 alpha:1.0];
-    _pageControl.currentPageIndicatorTintColor = [UIColor colorWithRed:201/255.0 green:159/255.0 blue:92/255.0 alpha:1.0];
-    [self.view addSubview:_pageControl];
-}
-
-- (NSArray *)ittemsCardViewAry
-{
-    NSMutableArray *ary = [NSMutableArray new];
+    ratio = SCREENWIDTH/375;
     
     NSArray * itemsImg = @[@"zhanlizishi_03",@"pingtangzishi_03",@"xiadunzishi_03",@"ziyouzishi_03"];
-    
     for (int i = 0;i<itemsImg.count;i++) {
-        
-        UIImageView *backImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 100, 233, 377)];
-        backImageView.image = [UIImage imageNamed:itemsImg[i]];
-        backImageView.userInteractionEnabled = YES;
-        
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.frame = CGRectMake(0, 0, 119, 43);
-        button.center = CGPointMake(backImageView.frame.size.width/2, backImageView.frame.size.height - button.frame.size.height/2 - 43);
-        [button setBackgroundImage:[UIImage imageNamed:@"dianjijinru_03"] forState:UIControlStateNormal];
-        button.tag = 100+i;
-        [button addTarget:self action:@selector(classEvent:) forControlEvents:UIControlEventTouchUpInside];
-        [backImageView addSubview:button];
-        [ary addObject:backImageView];
+        UIImage *image = [UIImage imageNamed:itemsImg[i]];
+        [self.imageArray addObject:image];
     }
-    return ary;
+    
+    [self addFelicityView];
+}
+//-(void)leftBtnClick
+//{
+//    [self.navigationController popViewControllerAnimated:NO];
+//}
+- (void)addFelicityView {
+    
+    self.wlScrView = [[WLScrollView alloc]initWithFrame:CGRectMake(0, 133, SCREENWIDTH, 753/2*ratio)];
+    self.wlScrView.delegate = self;
+    self.wlScrView.isAnimation = YES;
+    self.wlScrView.scale = 0.7;
+    self.wlScrView.marginX = 10;
+    self.wlScrView.maxAnimationScale = 1;
+    self.wlScrView.minAnimationScale = 0.8;
+    self.wlScrView.backgroundColor = [UIColor clearColor];
+    [self.wlScrView starRender];
+    [self.view addSubview:self.wlScrView];
+    
 }
 
-#pragma mark - HXCardSwitchView delegate
-- (void)cardSwitchViewDidScroll:(HXCardSwitchView *)cardSwitchView index:(NSInteger)index
-{
-    [self.pageControl setCurrentPage:index];
+#pragma mark - WLScrollViewDelegate
+- (NSInteger)numOfContentViewScrollView:(WLScrollView *)scrollView{
+    return self.imageArray.count;
 }
 
-#pragma mark - button event
-- (void)classEvent:(UIButton *)button{
-    KegelClassViewController *vc = [KegelClassViewController new];
-    vc.type = (KEGELTYPE)(button.tag - 100);
+- (WLSubView *)scrollView:(WLScrollView *)scrollView subViewFrame:(CGRect)frame cellAtIndex:(NSInteger)index {
+    
+    NSString *cellID = @"cell";
+    WLSubView *sub = [scrollView dequeueReuseCellWithIdentifier:cellID];
+    if (!sub) {
+        sub = [[WLSubView alloc] initWithFrame:frame Identifier:cellID];
+    }
+    sub.im.image = self.imageArray[index];
+    return sub;
+}
+
+- (void)scrollView:(WLScrollView *)scrollView didSelectedAtIndex:(NSInteger)index {
+    NSLog(@"点击 index %zd",index);
+    KegelClassViewController *vc = [[KegelClassViewController alloc] init];
+    vc.type = (int)index;
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)scrollView:(WLScrollView *)scrollView didCurrentCellAtIndex:(NSInteger)index {
+    NSLog(@"现在显示的 index %zd",index);
+}
+
+#pragma mark --懒加载
+- (NSMutableArray *)imageArray {
+    if (!_imageArray) {
+        _imageArray = [NSMutableArray array];
+    }
+    return _imageArray;
 }
 @end

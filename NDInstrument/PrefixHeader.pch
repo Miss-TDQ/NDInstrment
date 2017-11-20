@@ -20,6 +20,7 @@
 #import "NDInstrment.h"
 #import "UIView+UIViewAddition.h"
 #import "UIColor+Hex.h"
+#import "MyUserManager.h"
 
 /**判断ios版本*/
 #define IOS7            (__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_7_0)

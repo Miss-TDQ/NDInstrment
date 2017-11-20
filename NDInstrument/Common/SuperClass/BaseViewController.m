@@ -50,8 +50,15 @@
     [self.cusBar lt_setBackgroundColor:[UIColor clearColor]];
     self.cusBar.tickerView.tickerLabel.textColor = NavTitleColor;
     self.cusBar.customdelegate = self;
-    [self.cusBar setLeftBtnImgWith:[UIImage imageNamed:@"back_arrow"] RightBtnImgWith:nil];
     
+    if(self.navigationController.viewControllers.count != 1){
+          [self.cusBar setLeftBtnImgWith:[UIImage imageNamed:@"fanhui_03"] RightBtnImgWith:nil];
+    }
+}
+
+- (void)leftBtnClick
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

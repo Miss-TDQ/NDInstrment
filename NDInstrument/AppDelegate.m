@@ -25,6 +25,7 @@
 
     NDNavigationController *nav = [[NDNavigationController alloc]initWithRootViewController:[HomeViewController new]];
     self.window.rootViewController = nav;
+    [MyUserManager shareInstance].isCanDragBack = YES;
     
     return YES;
 }

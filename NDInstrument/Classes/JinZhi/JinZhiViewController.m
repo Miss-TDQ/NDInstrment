@@ -10,7 +10,7 @@
 #import "EvaluteResultViewController.h"
 
 typedef NS_ENUM(int,EVALUTEMODE){
-    EVALUTEMODE_NULL = 0 ,     //无检测
+    EVALUTEMODE_NULL = 0 ,         //无检测
     EVALUTEMODE_SLOW = 1 ,         //慢肌检测
     EVALUTEMODE_FAST = 2 ,         //快肌检测
     
@@ -157,7 +157,7 @@ typedef NS_ENUM(int,EVALUTESTATUS){
     
     if(_slowTimerValue > 0){
         _slowTimerValue--;
-        self.timeLab.text = [NSString stringWithFormat:@"00:%ld",(long)_slowTimerValue];
+        self.timeLab.text = [NSString stringWithFormat:@"00:%02ld",(long)_slowTimerValue];
     }else{
         self.tipLab.text = @"慢肌检测完成";
         _status = EVALUTESTATUS_END;

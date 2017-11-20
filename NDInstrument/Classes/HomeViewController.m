@@ -26,6 +26,7 @@
     self.deviceBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.deviceBtn addTarget:self action:@selector(classSelected:) forControlEvents:UIControlEventTouchUpInside];
     [self.deviceBtn setBackgroundImage:[UIImage imageNamed:@"neidiaoyi_03"] forState:UIControlStateNormal];
+    self.deviceBtn.adjustsImageWhenHighlighted = NO;
     self.deviceBtn.frame = CGRectMake((SCREENWIDTH - FitSizeValueWidth(345))/2, 15+CGRectGetHeight(self.cusBar.frame), FitSizeValueWidth(345), FitSizeValueHeight(216));
     [self.view addSubview:self.deviceBtn];
     

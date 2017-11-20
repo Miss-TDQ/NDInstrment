@@ -33,9 +33,9 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kaigeer_03" translatesAutoresizingMaskIntoConstraints="NO" id="8LM-8I-kYN">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="218.66666666666666"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chi-TF-BbX">
+                                        <button opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chi-TF-BbX">
                                             <rect key="frame" x="223.33333333333337" y="133.33333333333334" width="134.66666666666663" height="46.666666666666657"/>
-                                            <state key="normal" image="dianjijinru_03"/>
+                                            <state key="normal" image="left_jiantou_03"/>
                                             <connections>
                                                 <action selector="kegelEvent:" destination="-1" eventType="touchUpInside" id="zvr-in-8co"/>
                                             </connections>
@@ -58,7 +58,7 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simineidiao_03" translatesAutoresizingMaskIntoConstraints="NO" id="3JF-bF-nsD">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="219"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc5-6d-i6l">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc5-6d-i6l">
                                             <rect key="frame" x="56" y="134.33333333333331" width="134.66666666666666" height="46.666666666666657"/>
                                             <state key="normal" title="Button" image="dianjijinru_left_03"/>
                                             <connections>
@@ -81,9 +81,9 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jinzhidu_02" translatesAutoresizingMaskIntoConstraints="NO" id="cck-RM-VE2">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="218"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOI-az-lNU">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOI-az-lNU">
                                             <rect key="frame" x="223.33333333333337" y="133.33333333333337" width="134.66666666666663" height="46.666666666666657"/>
-                                            <state key="normal" image="dianjijinru_03"/>
+                                            <state key="normal" image="left_jiantou_03"/>
                                             <connections>
                                                 <action selector="jinzhiEvent:" destination="-1" eventType="touchUpInside" id="Soj-7X-C2y"/>
                                             </connections>
@@ -141,10 +141,10 @@
         </view>
     </objects>
     <resources>
-        <image name="dianjijinru_03" width="241" height="85"/>
         <image name="dianjijinru_left_03" width="241" height="85"/>
         <image name="jinzhidu_02" width="375" height="184"/>
         <image name="kaigeer_03" width="748" height="369"/>
+        <image name="left_jiantou_03" width="242" height="86"/>
         <image name="simineidiao_03" width="748" height="369"/>
     </resources>
 </document>

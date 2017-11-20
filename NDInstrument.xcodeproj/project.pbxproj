@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C57AF141FC313BB004E44BA /* KegelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C57AF121FC313BB004E44BA /* KegelViewController.m */; };
+		4C57AF191FC313D4004E44BA /* WLSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C57AF171FC313D4004E44BA /* WLSubView.m */; };
+		4C57AF1A1FC313D4004E44BA /* WLScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C57AF181FC313D4004E44BA /* WLScrollView.m */; };
+		4C57AF1D1FC31DF9004E44BA /* MyUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C57AF1B1FC31DF9004E44BA /* MyUserManager.m */; };
 		4C59DC941FC1145F0072BEFD /* JinZhiChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C59DC931FC1145F0072BEFD /* JinZhiChartView.m */; };
 		4C59DC971FC117640072BEFD /* UIView+UIViewAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C59DC961FC117640072BEFD /* UIView+UIViewAddition.m */; };
 		4C59DC9A1FC117FC0072BEFD /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C59DC991FC117FC0072BEFD /* UIColor+Hex.m */; };
@@ -38,7 +42,6 @@
 		4C7A06491FBFDD1A00D85D1D /* KegelClassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C7A06471FBFDD1A00D85D1D /* KegelClassViewController.xib */; };
 		4C7A06521FBFDD7800D85D1D /* EvaluteResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A06501FBFDD7800D85D1D /* EvaluteResultViewController.m */; };
 		4C7A06531FBFDD7800D85D1D /* EvaluteResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C7A06511FBFDD7800D85D1D /* EvaluteResultViewController.xib */; };
-		4C7A06561FC00B7900D85D1D /* HXCardSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A06551FC00B7900D85D1D /* HXCardSwitchView.m */; };
 		4C7A06B51FC0393100D85D1D /* SearchBluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A06B21FC0393000D85D1D /* SearchBluetoothViewController.m */; };
 		4C7A06B61FC0393100D85D1D /* SearchBluetoothViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C7A06B31FC0393000D85D1D /* SearchBluetoothViewController.xib */; };
 		4CB610A91FBC768F00E69C6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610A81FBC768F00E69C6E /* AppDelegate.m */; };
@@ -47,7 +50,6 @@
 		4CB610B41FBC768F00E69C6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB610B21FBC768F00E69C6E /* LaunchScreen.storyboard */; };
 		4CB610B71FBC768F00E69C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610B61FBC768F00E69C6E /* main.m */; };
 		4CB610D51FBC7AEA00E69C6E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610D41FBC7AEA00E69C6E /* BaseViewController.m */; };
-		4CB610DB1FBC8A9100E69C6E /* KegelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610D91FBC8A9100E69C6E /* KegelViewController.m */; };
 		4CB610E41FBC8BC000E69C6E /* CustomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610DF1FBC8BC000E69C6E /* CustomBar.m */; };
 		4CB610E51FBC8BC000E69C6E /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610E11FBC8BC000E69C6E /* CustomTabBar.m */; };
 		4CB610E61FBC8BC000E69C6E /* JHTickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB610E31FBC8BC000E69C6E /* JHTickerView.m */; };
@@ -57,6 +59,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C57AF121FC313BB004E44BA /* KegelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KegelViewController.m; sourceTree = "<group>"; };
+		4C57AF131FC313BB004E44BA /* KegelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KegelViewController.h; sourceTree = "<group>"; };
+		4C57AF151FC313D4004E44BA /* WLScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLScrollView.h; sourceTree = "<group>"; };
+		4C57AF161FC313D4004E44BA /* WLSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSubView.h; sourceTree = "<group>"; };
+		4C57AF171FC313D4004E44BA /* WLSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSubView.m; sourceTree = "<group>"; };
+		4C57AF181FC313D4004E44BA /* WLScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLScrollView.m; sourceTree = "<group>"; };
+		4C57AF1B1FC31DF9004E44BA /* MyUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUserManager.m; sourceTree = "<group>"; };
+		4C57AF1C1FC31DF9004E44BA /* MyUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUserManager.h; sourceTree = "<group>"; };
 		4C59DC921FC1145F0072BEFD /* JinZhiChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JinZhiChartView.h; sourceTree = "<group>"; };
 		4C59DC931FC1145F0072BEFD /* JinZhiChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JinZhiChartView.m; sourceTree = "<group>"; };
 		4C59DC951FC117640072BEFD /* UIView+UIViewAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIViewAddition.h"; sourceTree = "<group>"; };
@@ -112,8 +122,6 @@
 		4C7A064F1FBFDD7800D85D1D /* EvaluteResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EvaluteResultViewController.h; sourceTree = "<group>"; };
 		4C7A06501FBFDD7800D85D1D /* EvaluteResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EvaluteResultViewController.m; sourceTree = "<group>"; };
 		4C7A06511FBFDD7800D85D1D /* EvaluteResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EvaluteResultViewController.xib; sourceTree = "<group>"; };
-		4C7A06541FC00B7900D85D1D /* HXCardSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXCardSwitchView.h; sourceTree = "<group>"; };
-		4C7A06551FC00B7900D85D1D /* HXCardSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXCardSwitchView.m; sourceTree = "<group>"; };
 		4C7A06B21FC0393000D85D1D /* SearchBluetoothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBluetoothViewController.m; sourceTree = "<group>"; };
 		4C7A06B31FC0393000D85D1D /* SearchBluetoothViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchBluetoothViewController.xib; sourceTree = "<group>"; };
 		4C7A06B41FC0393100D85D1D /* SearchBluetoothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBluetoothViewController.h; sourceTree = "<group>"; };
@@ -129,8 +137,6 @@
 		4CB610D31FBC7AEA00E69C6E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		4CB610D41FBC7AEA00E69C6E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		4CB610D71FBC892E00E69C6E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		4CB610D81FBC8A9100E69C6E /* KegelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KegelViewController.h; sourceTree = "<group>"; };
-		4CB610D91FBC8A9100E69C6E /* KegelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KegelViewController.m; sourceTree = "<group>"; };
 		4CB610DE1FBC8BC000E69C6E /* CustomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBar.h; sourceTree = "<group>"; };
 		4CB610DF1FBC8BC000E69C6E /* CustomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBar.m; sourceTree = "<group>"; };
 		4CB610E01FBC8BC000E69C6E /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
@@ -277,6 +283,8 @@
 		4CB610BF1FBC7A3100E69C6E /* SingleClass */ = {
 			isa = PBXGroup;
 			children = (
+				4C57AF1C1FC31DF9004E44BA /* MyUserManager.h */,
+				4C57AF1B1FC31DF9004E44BA /* MyUserManager.m */,
 			);
 			path = SingleClass;
 			sourceTree = "<group>";
@@ -394,11 +402,11 @@
 		4CB610CB1FBC7A4C00E69C6E /* Kegel */ = {
 			isa = PBXGroup;
 			children = (
+				4C57AF131FC313BB004E44BA /* KegelViewController.h */,
+				4C57AF121FC313BB004E44BA /* KegelViewController.m */,
 				4CB610CC1FBC7A4C00E69C6E /* controller */,
 				4CB610CD1FBC7A4C00E69C6E /* model */,
 				4CB610CE1FBC7A4C00E69C6E /* view */,
-				4CB610D81FBC8A9100E69C6E /* KegelViewController.h */,
-				4CB610D91FBC8A9100E69C6E /* KegelViewController.m */,
 			);
 			path = Kegel;
 			sourceTree = "<group>";
@@ -423,8 +431,10 @@
 		4CB610CE1FBC7A4C00E69C6E /* view */ = {
 			isa = PBXGroup;
 			children = (
-				4C7A06541FC00B7900D85D1D /* HXCardSwitchView.h */,
-				4C7A06551FC00B7900D85D1D /* HXCardSwitchView.m */,
+				4C57AF151FC313D4004E44BA /* WLScrollView.h */,
+				4C57AF181FC313D4004E44BA /* WLScrollView.m */,
+				4C57AF161FC313D4004E44BA /* WLSubView.h */,
+				4C57AF171FC313D4004E44BA /* WLSubView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -574,11 +584,11 @@
 				4C59DC971FC117640072BEFD /* UIView+UIViewAddition.m in Sources */,
 				4C59DD021FC16A6F0072BEFD /* NSString+Toast.m in Sources */,
 				4CB610D51FBC7AEA00E69C6E /* BaseViewController.m in Sources */,
+				4C57AF1D1FC31DF9004E44BA /* MyUserManager.m in Sources */,
 				4CB610B71FBC768F00E69C6E /* main.m in Sources */,
 				4C59DCF91FC134A10072BEFD /* BLeHelper.m in Sources */,
 				4C59DCF01FC134A10072BEFD /* BabyBluetooth.m in Sources */,
 				4C59DC9F1FC12E410072BEFD /* NeiDiaoViewController.m in Sources */,
-				4CB610DB1FBC8A9100E69C6E /* KegelViewController.m in Sources */,
 				4C59DCF21FC134A10072BEFD /* BabyCentralManager.m in Sources */,
 				4C59DC9A1FC117FC0072BEFD /* UIColor+Hex.m in Sources */,
 				4C7A06431FBFCE6C00D85D1D /* ClassSelectedViewController.m in Sources */,
@@ -593,14 +603,16 @@
 				4C59DCF71FC134A10072BEFD /* BabySpeaker.m in Sources */,
 				4CB610A91FBC768F00E69C6E /* AppDelegate.m in Sources */,
 				4C59DCF31FC134A10072BEFD /* BabyDefine.m in Sources */,
+				4C57AF191FC313D4004E44BA /* WLSubView.m in Sources */,
 				4C59DCF51FC134A10072BEFD /* BabyPeripheralManager.m in Sources */,
-				4C7A06561FC00B7900D85D1D /* HXCardSwitchView.m in Sources */,
 				4C59DCFB1FC134A10072BEFD /* number.m in Sources */,
 				4C59DCFC1FC134A10072BEFD /* BLEManager.m in Sources */,
+				4C57AF1A1FC313D4004E44BA /* WLScrollView.m in Sources */,
 				4C59DCFA1FC134A10072BEFD /* NDInstrment.m in Sources */,
 				4C59DC941FC1145F0072BEFD /* JinZhiChartView.m in Sources */,
 				4C7A06B51FC0393100D85D1D /* SearchBluetoothViewController.m in Sources */,
 				4CB610EA1FBC8CC400E69C6E /* SDiPhoneVersion.m in Sources */,
+				4C57AF141FC313BB004E44BA /* KegelViewController.m in Sources */,
 				4C59DCF81FC134A10072BEFD /* BabyToy.m in Sources */,
 				4C7A06481FBFDD1A00D85D1D /* KegelClassViewController.m in Sources */,
 			);
