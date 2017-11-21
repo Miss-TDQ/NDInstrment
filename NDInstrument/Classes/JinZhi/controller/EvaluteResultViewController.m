@@ -316,7 +316,7 @@
     if(self.kegelImg2.hidden){
         self.kegelImg1Width.constant = 183;
     }else{
-        self.kegelImg1Width.constant = 183;
+        self.kegelImg1Width.constant = 100;
     }
     
     //    a.0-20分 1星

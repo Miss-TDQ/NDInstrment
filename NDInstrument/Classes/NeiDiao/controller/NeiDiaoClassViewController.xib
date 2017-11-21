@@ -110,7 +110,7 @@
                         <constraint firstAttribute="width" secondItem="3GE-Qe-cZt" secondAttribute="height" multiplier="19:6" id="t5U-lV-ice"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3t-Kf-jdm">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3t-Kf-jdm">
                     <rect key="frame" x="148" y="595.66666666666663" width="117" height="33"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="33" id="3pY-Zl-edJ"/>

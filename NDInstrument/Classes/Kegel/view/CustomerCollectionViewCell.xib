@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CustomerCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="377"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="233" height="377"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vTJ-b0-WQO">
+                        <rect key="frame" x="0.0" y="0.0" width="233" height="377"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTr-Ch-V1Y">
+                        <rect key="frame" x="57" y="296" width="119" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="119" id="TG4-Gn-gDT"/>
+                            <constraint firstAttribute="height" constant="36" id="bIR-NG-KIF"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="kaishijiance_11"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vTJ-b0-WQO" secondAttribute="trailing" id="62h-39-QYb"/>
+                <constraint firstAttribute="bottom" secondItem="vTJ-b0-WQO" secondAttribute="bottom" id="Flg-lb-qcS"/>
+                <constraint firstAttribute="bottom" secondItem="fTr-Ch-V1Y" secondAttribute="bottom" constant="45" id="GSI-SK-Cou"/>
+                <constraint firstItem="fTr-Ch-V1Y" firstAttribute="centerX" secondItem="vTJ-b0-WQO" secondAttribute="centerX" id="NuB-Qw-Dgy"/>
+                <constraint firstItem="vTJ-b0-WQO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bMB-Kj-jPv"/>
+                <constraint firstItem="vTJ-b0-WQO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dzF-48-iUG"/>
+                <constraint firstItem="vTJ-b0-WQO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jW3-v8-v56"/>
+                <constraint firstAttribute="bottom" secondItem="vTJ-b0-WQO" secondAttribute="bottom" id="lqI-1D-uEu"/>
+                <constraint firstItem="vTJ-b0-WQO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="omO-Af-wzD"/>
+                <constraint firstAttribute="trailing" secondItem="vTJ-b0-WQO" secondAttribute="trailing" id="uCp-BH-L4c"/>
+            </constraints>
+            <size key="customSize" width="168" height="318"/>
+            <connections>
+                <outlet property="im" destination="vTJ-b0-WQO" id="6lB-I7-3tz"/>
+                <outlet property="start" destination="fTr-Ch-V1Y" id="6QV-p6-shf"/>
+            </connections>
+            <point key="canvasLocation" x="-139" y="67"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="kaishijiance_11" width="241" height="68"/>
+    </resources>
+</document>

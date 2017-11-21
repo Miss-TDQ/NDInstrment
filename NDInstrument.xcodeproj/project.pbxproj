@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C57AF141FC313BB004E44BA /* KegelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C57AF121FC313BB004E44BA /* KegelViewController.m */; };
-		4C57AF191FC313D4004E44BA /* WLSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C57AF171FC313D4004E44BA /* WLSubView.m */; };
-		4C57AF1A1FC313D4004E44BA /* WLScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C57AF181FC313D4004E44BA /* WLScrollView.m */; };
 		4C57AF1D1FC31DF9004E44BA /* MyUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C57AF1B1FC31DF9004E44BA /* MyUserManager.m */; };
 		4C59DC941FC1145F0072BEFD /* JinZhiChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C59DC931FC1145F0072BEFD /* JinZhiChartView.m */; };
 		4C59DC971FC117640072BEFD /* UIView+UIViewAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C59DC961FC117640072BEFD /* UIView+UIViewAddition.m */; };
@@ -32,6 +29,11 @@
 		4C59DCFB1FC134A10072BEFD /* number.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C59DCEC1FC134A00072BEFD /* number.m */; };
 		4C59DCFC1FC134A10072BEFD /* BLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C59DCEF1FC134A00072BEFD /* BLEManager.m */; };
 		4C59DD021FC16A6F0072BEFD /* NSString+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C59DD011FC16A6F0072BEFD /* NSString+Toast.m */; };
+		4C78FBDF1FC443AE00833159 /* KegelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C78FBDE1FC443AE00833159 /* KegelViewController.m */; };
+		4C78FBE51FC443DC00833159 /* DWFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C78FBE01FC443DB00833159 /* DWFlowLayout.m */; };
+		4C78FBE61FC443DC00833159 /* CustomerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C78FBE21FC443DB00833159 /* CustomerCollectionViewCell.m */; };
+		4C78FBE71FC443DC00833159 /* CustomerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C78FBE41FC443DB00833159 /* CustomerCollectionViewCell.xib */; };
+		4C78FBEA1FC4440500833159 /* lineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C78FBE91FC4440500833159 /* lineView.m */; };
 		4C7A062A1FBFCA6000D85D1D /* JinZhiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A06281FBFCA6000D85D1D /* JinZhiViewController.m */; };
 		4C7A062B1FBFCA6000D85D1D /* JinZhiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C7A06291FBFCA6000D85D1D /* JinZhiViewController.xib */; };
 		4C7A063E1FBFCAE000D85D1D /* BluetoothListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A063C1FBFCAE000D85D1D /* BluetoothListViewController.m */; };
@@ -59,12 +61,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C57AF121FC313BB004E44BA /* KegelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KegelViewController.m; sourceTree = "<group>"; };
-		4C57AF131FC313BB004E44BA /* KegelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KegelViewController.h; sourceTree = "<group>"; };
-		4C57AF151FC313D4004E44BA /* WLScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLScrollView.h; sourceTree = "<group>"; };
-		4C57AF161FC313D4004E44BA /* WLSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSubView.h; sourceTree = "<group>"; };
-		4C57AF171FC313D4004E44BA /* WLSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSubView.m; sourceTree = "<group>"; };
-		4C57AF181FC313D4004E44BA /* WLScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLScrollView.m; sourceTree = "<group>"; };
 		4C57AF1B1FC31DF9004E44BA /* MyUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUserManager.m; sourceTree = "<group>"; };
 		4C57AF1C1FC31DF9004E44BA /* MyUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUserManager.h; sourceTree = "<group>"; };
 		4C59DC921FC1145F0072BEFD /* JinZhiChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JinZhiChartView.h; sourceTree = "<group>"; };
@@ -107,6 +103,15 @@
 		4C59DCEF1FC134A00072BEFD /* BLEManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEManager.m; sourceTree = "<group>"; };
 		4C59DD001FC16A6F0072BEFD /* NSString+Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Toast.h"; sourceTree = "<group>"; };
 		4C59DD011FC16A6F0072BEFD /* NSString+Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Toast.m"; sourceTree = "<group>"; };
+		4C78FBDD1FC443AE00833159 /* KegelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KegelViewController.h; sourceTree = "<group>"; };
+		4C78FBDE1FC443AE00833159 /* KegelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KegelViewController.m; sourceTree = "<group>"; };
+		4C78FBE01FC443DB00833159 /* DWFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWFlowLayout.m; sourceTree = "<group>"; };
+		4C78FBE11FC443DB00833159 /* DWFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWFlowLayout.h; sourceTree = "<group>"; };
+		4C78FBE21FC443DB00833159 /* CustomerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerCollectionViewCell.m; sourceTree = "<group>"; };
+		4C78FBE31FC443DB00833159 /* CustomerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerCollectionViewCell.h; sourceTree = "<group>"; };
+		4C78FBE41FC443DB00833159 /* CustomerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerCollectionViewCell.xib; sourceTree = "<group>"; };
+		4C78FBE81FC4440500833159 /* lineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lineView.h; sourceTree = "<group>"; };
+		4C78FBE91FC4440500833159 /* lineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lineView.m; sourceTree = "<group>"; };
 		4C7A06271FBFCA6000D85D1D /* JinZhiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JinZhiViewController.h; sourceTree = "<group>"; };
 		4C7A06281FBFCA6000D85D1D /* JinZhiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JinZhiViewController.m; sourceTree = "<group>"; };
 		4C7A06291FBFCA6000D85D1D /* JinZhiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JinZhiViewController.xib; sourceTree = "<group>"; };
@@ -402,8 +407,8 @@
 		4CB610CB1FBC7A4C00E69C6E /* Kegel */ = {
 			isa = PBXGroup;
 			children = (
-				4C57AF131FC313BB004E44BA /* KegelViewController.h */,
-				4C57AF121FC313BB004E44BA /* KegelViewController.m */,
+				4C78FBDD1FC443AE00833159 /* KegelViewController.h */,
+				4C78FBDE1FC443AE00833159 /* KegelViewController.m */,
 				4CB610CC1FBC7A4C00E69C6E /* controller */,
 				4CB610CD1FBC7A4C00E69C6E /* model */,
 				4CB610CE1FBC7A4C00E69C6E /* view */,
@@ -431,10 +436,11 @@
 		4CB610CE1FBC7A4C00E69C6E /* view */ = {
 			isa = PBXGroup;
 			children = (
-				4C57AF151FC313D4004E44BA /* WLScrollView.h */,
-				4C57AF181FC313D4004E44BA /* WLScrollView.m */,
-				4C57AF161FC313D4004E44BA /* WLSubView.h */,
-				4C57AF171FC313D4004E44BA /* WLSubView.m */,
+				4C78FBE31FC443DB00833159 /* CustomerCollectionViewCell.h */,
+				4C78FBE21FC443DB00833159 /* CustomerCollectionViewCell.m */,
+				4C78FBE41FC443DB00833159 /* CustomerCollectionViewCell.xib */,
+				4C78FBE11FC443DB00833159 /* DWFlowLayout.h */,
+				4C78FBE01FC443DB00833159 /* DWFlowLayout.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -448,6 +454,8 @@
 				4CB610D01FBC7A4C00E69C6E /* controller */,
 				4CB610D11FBC7A4C00E69C6E /* model */,
 				4CB610D21FBC7A4C00E69C6E /* view */,
+				4C78FBE81FC4440500833159 /* lineView.h */,
+				4C78FBE91FC4440500833159 /* lineView.m */,
 			);
 			path = NeiDiao;
 			sourceTree = "<group>";
@@ -566,6 +574,7 @@
 				4C59DCA31FC12E6A0072BEFD /* NeiDiaoClassViewController.xib in Resources */,
 				4C7A06441FBFCE6C00D85D1D /* ClassSelectedViewController.xib in Resources */,
 				4C7A06531FBFDD7800D85D1D /* EvaluteResultViewController.xib in Resources */,
+				4C78FBE71FC443DC00833159 /* CustomerCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C78FBEA1FC4440500833159 /* lineView.m in Sources */,
 				4CB610E61FBC8BC000E69C6E /* JHTickerView.m in Sources */,
 				4C59DCF61FC134A10072BEFD /* BabyRhythm.m in Sources */,
 				4CB610AC1FBC768F00E69C6E /* HomeViewController.m in Sources */,
@@ -593,6 +603,7 @@
 				4C59DC9A1FC117FC0072BEFD /* UIColor+Hex.m in Sources */,
 				4C7A06431FBFCE6C00D85D1D /* ClassSelectedViewController.m in Sources */,
 				4CB610F41FBC903C00E69C6E /* NDNavigationController.m in Sources */,
+				4C78FBE61FC443DC00833159 /* CustomerCollectionViewCell.m in Sources */,
 				4C59DCA41FC12E6A0072BEFD /* NeiDiaoClassViewController.m in Sources */,
 				4C59DCF11FC134A10072BEFD /* BabyCallback.m in Sources */,
 				4CB610F11FBC8E4B00E69C6E /* NSString+PKBSize.m in Sources */,
@@ -603,16 +614,15 @@
 				4C59DCF71FC134A10072BEFD /* BabySpeaker.m in Sources */,
 				4CB610A91FBC768F00E69C6E /* AppDelegate.m in Sources */,
 				4C59DCF31FC134A10072BEFD /* BabyDefine.m in Sources */,
-				4C57AF191FC313D4004E44BA /* WLSubView.m in Sources */,
 				4C59DCF51FC134A10072BEFD /* BabyPeripheralManager.m in Sources */,
+				4C78FBE51FC443DC00833159 /* DWFlowLayout.m in Sources */,
 				4C59DCFB1FC134A10072BEFD /* number.m in Sources */,
 				4C59DCFC1FC134A10072BEFD /* BLEManager.m in Sources */,
-				4C57AF1A1FC313D4004E44BA /* WLScrollView.m in Sources */,
+				4C78FBDF1FC443AE00833159 /* KegelViewController.m in Sources */,
 				4C59DCFA1FC134A10072BEFD /* NDInstrment.m in Sources */,
 				4C59DC941FC1145F0072BEFD /* JinZhiChartView.m in Sources */,
 				4C7A06B51FC0393100D85D1D /* SearchBluetoothViewController.m in Sources */,
 				4CB610EA1FBC8CC400E69C6E /* SDiPhoneVersion.m in Sources */,
-				4C57AF141FC313BB004E44BA /* KegelViewController.m in Sources */,
 				4C59DCF81FC134A10072BEFD /* BabyToy.m in Sources */,
 				4C7A06481FBFDD1A00D85D1D /* KegelClassViewController.m in Sources */,
 			);
@@ -751,7 +761,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0638eebb-d62e-442a-8c01-c206f1ebcbe5";
 				PROVISIONING_PROFILE_SPECIFIER = EcarayDebug;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -769,7 +779,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ndy..NDInstrument;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
